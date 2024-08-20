@@ -1,0 +1,188 @@
+/* Styles de base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* En-tête */
+header {
+    background: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.cta .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: #0056b3;
+}
+
+/* Section Héro */
+.hero {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.hero .btn {
+    background: #ffffff;
+    color: #007bff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.hero .btn:hover {
+    background: #f0f0f0;
+    color: #0056b3;
+}
+
+/* Section Features */
+.features {
+    padding: 3rem 0;
+    background: #f8f9fa;
+}
+
+.features .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1 1 calc(33.333% - 2rem);
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.feature:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pied de page */
+footer {
+    background: #e9ecef;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer nav {
+    display: flex;
+    gap: 1rem;
+}
+
+footer nav a {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer nav a:hover {
+    color: #007bff;
+}
